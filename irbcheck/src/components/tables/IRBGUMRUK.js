@@ -1,6 +1,5 @@
 import React from "react";
 import BaseTable from "./BaseTable";
-import Spinner from "./Spinner";
 
 const headers = [
   "IRB Id",
@@ -29,15 +28,11 @@ const data = [
   }
 ];
 
-const IRB = () => {
-  if (headers === undefined || headers.length === 0) {
-    return <Spinner />;
-  } else {
-    return (
-      <div>
-        <BaseTable chip={"İRB"} headers={headers} data={data} />
-      </div>
-    );
-  }
+const IRBGUMRUK = () => {
+  return (
+    <div>
+      <BaseTable chip={"İRBGÜMRÜK"} headers={headers} data={data} />
+    </div>
+  );
 };
-export default IRB;
+export default IRBGUMRUK;
